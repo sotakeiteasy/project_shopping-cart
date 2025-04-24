@@ -1,0 +1,48 @@
+@use "../../styles/variables.scss" as *;
+
+/* Header */
+.header {
+  width: 100%;
+  display: flex;
+
+  padding: 1rem;
+  background-color: $color-primary;
+
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 0px 60px;
+    width: 100%;
+    gap: 100px;
+
+    .logo {
+      font-size: 1.8rem !important;
+      font-weight: bold;
+
+      &:hover {
+        text-decoration: none !important;
+      }
+    }
+
+    .navLink {
+      color: $color-accent;
+      opacity: 0.8;
+      font-size: 1.2rem;
+      // color: $color-light;
+      text-decoration: none;
+      transition: opacity 0.3s ease;
+      font-weight: 600;
+
+      &:hover {
+        // text-decoration: underline;
+        opacity: 1;
+      }
+    }
+
+    .navGroup {
+      display: flex;
+      gap: 60px;
+    }
+  }
+}

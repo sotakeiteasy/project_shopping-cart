@@ -1,0 +1,41 @@
+@use "../../styles/variables.scss" as *;
+
+.cart {
+  display: flex;
+  padding: 40px 80px;
+  min-height: 100vh;
+  width: 100%;
+  justify-content: center;
+}
+
+.products {
+  display: flex;
+  align-items: start;
+  flex-wrap: wrap;
+}
+
+.checkout {
+  padding: 20px;
+  width: 450px;
+  margin-left: auto;
+
+  .total {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  .checkoutButton {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .checkoutButton:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+}

@@ -1,0 +1,16 @@
+@use "./styles/variables.scss" as *;
+/* Footer */
+footer {
+  padding: 1rem;
+  background-color: $color-primary;
+  text-align: center;
+  color: $color-text;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+  background-color: $color-primary;
+}
