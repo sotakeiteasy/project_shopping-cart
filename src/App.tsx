@@ -48,7 +48,7 @@ export default function App() {
 
   return (
     <CartContext.Provider value={{ cart, setCart }}>
-      <RouterProvider router={router} />;
+      <RouterProvider router={router} />
     </CartContext.Provider>
-  );
+  )
 }
