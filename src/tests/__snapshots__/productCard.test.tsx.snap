@@ -1,0 +1,52 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`renders ProductCart > snapshot productCard 1`] = `
+<div>
+  <div
+    class="_productCard_fbb629"
+  >
+    <div
+      class="_imageContainer_fbb629"
+    >
+      <img
+        alt="image of test"
+        src="test"
+      />
+    </div>
+    <h3>
+      test
+    </h3>
+    <p>
+      5
+      ⭐/ 
+      2
+    </p>
+    <span
+      class="_price_fbb629"
+    >
+      20
+      $
+    </span>
+    <span
+      class="_buttons_fbb629"
+    >
+      <button
+        class="_buyButton_fbb629"
+      >
+        In cart
+      </button>
+      <button
+        class="_numberBtn_fbb629"
+      >
+        -
+      </button>
+      2
+      <button
+        class="_numberBtn_fbb629"
+      >
+        +
+      </button>
+    </span>
+  </div>
+</div>
+`;

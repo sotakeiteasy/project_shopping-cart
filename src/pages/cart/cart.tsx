@@ -21,14 +21,14 @@ function groupProducts(cart: Product[]) {
 export default function Cart() {
   const { cart } = useCart();
   const groupedProducts = groupProducts(cart);
-  const price =
-    Math.round(cart.reduce((sum, count) => sum + count.price, 0) * 100) / 100;
+  const price = Math.round(cart.reduce((sum, count) => sum + count.price, 0) * 100) / 100;
+
   return (
     <main>
       <div className={styles.cart}>
         <div className={styles.products}>
           {cart.length === 0 ? (
-            <p>Корзина пуста</p>
+            <p>Cart is empty</p>
           ) : (
             groupedProducts.map((product) => (
               <ProductCard
@@ -40,7 +40,7 @@ export default function Cart() {
           )}
         </div>
         <div className={styles.checkout}>
-          <h2>Оформление заказа</h2>
+          <h2>Placing an order</h2>
           <div className={styles.total}>
             <span>Price of ads:</span>
             <span>{price} $</span>
@@ -71,7 +71,7 @@ export default function Cart() {
             className={styles.checkoutButton}
             disabled={cart.length === 0}
           >
-            Оформить заказ
+            Place an order
           </button>
         </div>
       </div>

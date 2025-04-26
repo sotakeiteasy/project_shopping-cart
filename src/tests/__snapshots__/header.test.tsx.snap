@@ -1,0 +1,40 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`header renders > snapshot header 1`] = `
+<div>
+  <header
+    class="_header_98091d"
+  >
+    <nav
+      class="_nav_98091d"
+    >
+      <a
+        class="_navLink_98091d _logo_98091d"
+        data-discover="true"
+        href="/"
+      >
+        My Store
+      </a>
+      <a
+        class="_navLink_98091d"
+        data-discover="true"
+        href="/catalog"
+      >
+        Catalog
+      </a>
+      <div
+        class="_navGroup_98091d"
+      >
+        <a
+          class="_navLink_98091d"
+          data-discover="true"
+          href="/cart"
+        >
+          Cart 
+          0
+        </a>
+      </div>
+    </nav>
+  </header>
+</div>
+`;

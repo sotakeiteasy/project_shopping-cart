@@ -27,7 +27,8 @@
       "@/*": ["./src/*", "./dist/*", ""],
       "@utils/*": ["src/utils/*"],
       "@components/*": ["src/components/*"]
-    }
+    },
+    "types": ["vitest/globals"]
   },
   "include": ["src"]
 }

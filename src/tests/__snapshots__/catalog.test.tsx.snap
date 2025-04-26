@@ -1,0 +1,51 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`render catalog correctly > renders catalog 1`] = `
+<div>
+  <main
+    class="_catalog_4f6bc5"
+  >
+    <h2>
+      Catalog
+    </h2>
+    <section
+      class="_filters_4f6bc5"
+    >
+      <button>
+        All
+      </button>
+      <button>
+        New
+      </button>
+      <button>
+        Sale
+      </button>
+    </section>
+    <section
+      class="_products_4f6bc5"
+    >
+      <div>
+        Loading data...
+      </div>
+    </section>
+    <section
+      class="_infoSection_4f6bc5"
+    >
+      <h3>
+        Shopping Info
+      </h3>
+      <ul>
+        <li>
+          Free delivery over $50
+        </li>
+        <li>
+          14-day returns & exchanges
+        </li>
+        <li>
+          Support: support@example.com
+        </li>
+      </ul>
+    </section>
+  </main>
+</div>
+`;

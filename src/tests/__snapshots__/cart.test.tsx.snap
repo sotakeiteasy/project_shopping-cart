@@ -1,0 +1,64 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`render cart > snapshot cart 1`] = `
+<div>
+  <main>
+    <div
+      class="_cart_3365fd"
+    >
+      <div
+        class="_products_3365fd"
+      >
+        <p>
+          Cart is empty
+        </p>
+      </div>
+      <div
+        class="_checkout_3365fd"
+      >
+        <h2>
+          Placing an order
+        </h2>
+        <div
+          class="_total_3365fd"
+        >
+          <span>
+            Price of ads:
+          </span>
+          <span>
+            0
+             $
+          </span>
+        </div>
+        <div
+          class="_total_3365fd"
+        >
+          <span>
+            Delivery: 
+          </span>
+          <span>
+            5$
+          </span>
+        </div>
+        <div
+          class="_total_3365fd"
+        >
+          <span>
+            Total: 
+          </span>
+          <span>
+            5
+            $
+          </span>
+        </div>
+        <button
+          class="_checkoutButton_3365fd"
+          disabled=""
+        >
+          Place an order
+        </button>
+      </div>
+    </div>
+  </main>
+</div>
+`;

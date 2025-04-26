@@ -9,12 +9,16 @@ export default defineConfig({
   test: {
     globals: true,
     environment: 'jsdom',
-    setupFiles: './tests/setup.js',
+    setupFiles: './src/tests/setup.ts',
+    coverage: {
+      provider: 'v8',
+      reporter: ['text', 'json', 'html'],
+    },
   },
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src/"),
-      utils: path.resolve(__dirname, "./src/utils"),
+      '@utils': path.resolve(__dirname, "./src/utils"),
       "@components": path.resolve(__dirname, "./src/components"),
     },
   },

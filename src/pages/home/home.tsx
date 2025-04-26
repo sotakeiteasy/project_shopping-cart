@@ -55,18 +55,18 @@ export default function Home() {
             <p>
               Be the first to explore our latest arrivals and exciting trends.
             </p>
-            <a href="#" className={styles.moreLink}>
+            <Link to="/" className={styles.moreLink}>
               Learn More
-            </a>
+            </Link>
           </article>
           <article className={styles.newsItem}>
             <h3>Loyalty Program</h3>
             <p>
               Join our program and enjoy exclusive rewards for every purchase.
             </p>
-            <a href="#" className={styles.moreLink}>
+            <Link to="/" className={styles.moreLink}>
               Learn More
-            </a>
+            </Link>
           </article>
         </div>
       </section>
