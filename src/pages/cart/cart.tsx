@@ -1,4 +1,4 @@
-import styles from "./cart.module.scss";
+import styles from "./Cart.module.scss";
 import { ProductCard } from "@/components";
 import { Product } from "@/utils/types";
 import { useCart } from "@/utils/hooks/useCart";

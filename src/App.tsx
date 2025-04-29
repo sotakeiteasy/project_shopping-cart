@@ -7,6 +7,7 @@ import { Product } from "@/utils/types";
 import { useCart } from "@/utils/hooks/useCart";
 import { CartContext } from "@/utils/contexts/CartContext";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router";
+import ProductPage from "./pages/ProductPage/ProductPage";
 
 const Layout = () => {
   const { cart } = useCart();
@@ -37,6 +38,10 @@ export default function App() {
         {
           path: "catalog",
           element: <Catalog />,
+        },
+        {
+          path: 'products/:id',
+          element: <ProductPage />,
         },
         {
           path: "cart",

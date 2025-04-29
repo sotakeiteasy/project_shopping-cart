@@ -1,5 +1,5 @@
-import Home from "./home/home";
-import Catalog from "./catalog/catalog";
-import Cart from "./cart/cart";
+import Home from "./Home/Home";
+import Catalog from "./Catalog/Catalog";
+import Cart from "./Cart/Cart";
 
 export { Home, Catalog, Cart };

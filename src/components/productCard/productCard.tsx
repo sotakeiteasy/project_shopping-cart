@@ -1,7 +1,8 @@
-import styles from "./productCard.module.scss";
+import styles from "./ProductCard.module.scss";
 import { useState } from "react";
 import { Product } from "@/utils/types";
 import { useCart } from "@/utils/hooks/useCart";
+import { Link } from "react-router";
 
 export default function ProductCard({
   product,
@@ -32,23 +33,31 @@ export default function ProductCard({
 
   const addToCart = (count: number) => {
     setCount(count + 1);
-    setCart((prev) => [...prev, product]);
+    setCart((prev) => [...prev, product])
   };
 
   return (
     <div key={product.id} className={styles.productCard}>
-      <div className={styles.imageContainer}>
-        <img src={product.image} alt={`image of ${product.title}`} />
-      </div>
-      <h3>{product.title}</h3>
-      <p>
-        {product.rating.rate}⭐/ {product.rating.count}
-      </p>
-      <span className={styles.price}>{product.price}$</span>
+      <Link to={`/products/${product.id}`}>
+        <div className={styles.imageContainer}>
+          <img src={product.image} alt={`image of ${product.title}`} />
+        </div>
+        <h3>{product.title}</h3>
+        <p>
+          {product.rating.rate}⭐/ {product.rating.count}
+        </p>
+        <span className={styles.price}>{product.price}$</span>
+      </Link>
       <span className={styles.buttons}>
-        <button onClick={() => addToCart(count)} className={styles.buyButton}>
-          {count > 0 ? "In cart" : "Add to cart"}
-        </button>
+        {count < 1 ?
+          <button onClick={() => addToCart(count)} className={styles.buyButton}>
+            Add to cart
+          </button> :
+          <Link to={`/cart`}>
+            <button className={styles.buyButton}>
+              In cart
+            </button>
+          </Link>}
         {count > 0 && (
           <>
             <button className={styles.numberBtn} onClick={decreaseCount}>

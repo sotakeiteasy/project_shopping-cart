@@ -1,4 +1,4 @@
-import styles from "./home.module.scss";
+import styles from "./Home.module.scss";
 import { Link } from "react-router";
 export default function Home() {
   return (
